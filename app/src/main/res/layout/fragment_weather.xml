@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:id="@+id/heading_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TableRow
+            android:id="@+id/city_heading_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/city_heading"
+                style="@style/ContentMainPageTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/city_heading" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/forecast_heading_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/forecast_heading"
+                style="@style/ContentMainPageText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/forecast_heading" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/temp_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/heading_table_layout">
+
+        <TableRow
+            android:id="@+id/cels_temp_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c_temp_row_heading"
+                style="@style/ContentMainPageRow"
+                android:text="@string/c_temp_row_heading" />
+
+            <TextView
+                android:id="@+id/day1_c_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day1_c_temp" />
+
+            <TextView
+                android:id="@+id/day2_c_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day2_c_temp" />
+
+            <TextView
+                android:id="@+id/day3_c_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day3_c_temp" />
+
+            <TextView
+                android:id="@+id/day4_c_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day4_c_temp" />
+
+            <TextView
+                android:id="@+id/day5_c_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day5_c_temp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fahr_temp_row"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/f_temp_row_heading"
+                style="@style/ContentMainPageRow"
+                android:text="@string/f_temp_row_heading" />
+
+            <TextView
+                android:id="@+id/day1_f_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day1_f_temp" />
+
+            <TextView
+                android:id="@+id/day2_f_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day2_f_temp" />
+
+            <TextView
+                android:id="@+id/day3_f_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day3_f_temp" />
+
+            <TextView
+                android:id="@+id/day4_f_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day4_f_temp" />
+
+            <TextView
+                android:id="@+id/day5_f_temp"
+                style="@style/ContentMainPageRow"
+                android:text="@string/day5_f_temp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

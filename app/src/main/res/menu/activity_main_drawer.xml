@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rest"
+            android:title="Restaurants and Nightlife" />
+        <item
+            android:id="@+id/nav_edu"
+            android:title="Educational" />
+        <item
+            android:id="@+id/nav_outdoor"
+            android:title="Outdoor Activities" />
+        <item
+            android:id="@+id/nav_wine"
+            android:title="Wineries" />
+
+        <item
+            android:id="@+id/nav_cafes"
+            android:title="Cafes" />
+
+        <item
+            android:id="@+id/nav_shops"
+            android:title="Shops" />
+
+    </group>
+
+
+</menu>

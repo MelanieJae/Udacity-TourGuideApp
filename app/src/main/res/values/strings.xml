@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tour Guide: Queenstown</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- app bar activity labels -->
+    <string name="appbar_content_main">Welcome To Queenstown!</string>
+    <string name="appbar_rests">Restaurants and Nightlife</string>
+    <string name="appbar_edu">Educational Tours</string>
+    <string name="appbar_outdoor">Outdoor Activities</string>
+    <string name="appbar_shops">Explore Shops</string>
+    <string name="appbar_wine">Local Winery and Farm Tours</string>
+    <string name="appbar_cafes">Restaurants and Nightlife</string>
+
+    <!-- weather fragment temps -->
+    <string name="forecast_heading">"5-day Weather Forecast"</string>
+    <string name="city_heading">Queenstown, NZ</string>
+    <string name="c_temp_row_heading">&#176;C  H/L</string>
+    <string name="f_temp_row_heading">&#176;F  H/L</string>
+    <string name="day1_c_temp">12/5</string>
+    <string name="day2_c_temp">12/7</string>
+    <string name="day3_c_temp">10/4</string>
+    <string name="day4_c_temp">10/5</string>
+    <string name="day5_c_temp">7/1</string>
+
+    <string name="day1_f_temp">53/42</string>
+    <string name="day2_f_temp">53/44</string>
+    <string name="day3_f_temp">50/39</string>
+    <string name="day4_f_temp">49/41</string>
+    <string name="day5_f_temp">44/33</string>
+
+    <!-- image content descriptions -->
+    <string name="ss_icon_cd">Weather indicator icon with a cloud and raindrops falling</string>
+    <string name="pc_icon_cd">Weather indicator icon with a sun partially covered by a cloud</string>
+    <string name="nav_header_image_cd">
+        Aerial photo of Queenstown, NZ at night with city lights
+    </string>
+    <string name="main_page_image">
+        Lake Wakatipu at sunset with Remarkables Mountain Range in the background
+    </string>
+</resources>
