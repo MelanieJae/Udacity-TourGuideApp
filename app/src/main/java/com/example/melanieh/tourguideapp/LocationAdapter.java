@@ -40,29 +40,25 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         Location currentLocation = getItem(position);
         Log.v(debug_tag, "Current location: " + currentLocation);
 
-        // find the TextView where the first state in the Word class object is used to set the text,
-        // i.e. the TextView where the miwok word will go...
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.location_name);
-        //... and set its text attribute (i.e. the Miwok word that will appear in the view)
-        nameTextView.setText(currentLocation.getName());
+        String currentName = getContext().getResources().getString(currentLocation.getNameId());
 
-//      //ImageView where the list item icon is to be shown
+        TextView nameTextView = (TextView) listItemView.findViewById(R.id.location_name);
+        nameTextView.setText(currentName);
+
+        //ImageView 1 (portrait and landscape card image 1)
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.location_img);
         imageView.setImageResource(currentLocation.getImageAssetId());
 
-//        //ImageView where the list item icon is to be shown
-        ImageView image2View = (ImageView) listItemView.findViewById(R.id.location_img_2);
-        image2View.setImageResource(currentLocation.getImage2AssetId());
+        String currentAddress = getContext().getResources().getString(currentLocation.getAddressId());
 
-        // find the TextView where the second state in the Word class object is used to set the text,
-        // i.e. the TextView where the default/English word will go
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.location_address);
-        //...and set its text attribute (i.e. the default/English word that will appear in the view)
-        addressTextView.setText(currentLocation.getAddress());
+        addressTextView.setText(currentAddress);
 
+        String currentURL = getContext().getResources().getString(currentLocation.getURLId());
         TextView urlView = (TextView)listItemView.findViewById(R.id.location_url);
-        urlView.setText(currentLocation.getURL());
+        urlView.setText(currentURL);
 
         return listItemView;
     }
+
 }

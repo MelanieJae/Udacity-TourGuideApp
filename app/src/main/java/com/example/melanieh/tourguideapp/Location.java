@@ -7,54 +7,45 @@ package com.example.melanieh.tourguideapp;
 public class Location {
 
     // member variables for all constructors
-    String mName;
-    String mAddress;
+    int mNameId;
+    int mAddressId;
     int mImageAssetId;
-    int mImage2AssetId;
-    String mURL;
+    int mURLId;
 
     /*
         * constructor
         *
-        * @param name= name of location
+        * @param nameId= string id for name of location
         *
         * @param imageId=image shown in card
         *
-        * @param image2Id=2nd image for landscape-oriented cards
+        * @param addressId=string Id for address of location shown in card
         *
-        * @param address=address of location shown in card
-        *
-        * @param URL = website link for location
+        * @param URLId = string id for website link for location
          */
-    public Location(String name, int imageId, int image2Id, String address, String url) {
-        this.mName = name;
-        this.mImageAssetId = imageId;
-        this.mImage2AssetId = image2Id;
-        this.mAddress = address;
-        this.mURL = url;
+
+    public Location(int mNameId, int mImageAssetId,int mAddressId, int mURLId) {
+        this.mNameId = mNameId;
+        this.mImageAssetId = mImageAssetId;
+        this.mAddressId = mAddressId;
+        this.mURLId = mURLId;
     }
 
     /* 'getter' methods for member variables */
-    public String getName() { return mName; }
+    public int getNameId() { return mNameId; }
     public int getImageAssetId() { return mImageAssetId; }
-    public String getAddress() { return mAddress; }
-    public String getURL() { return mURL; }
+    public int getAddressId() { return mAddressId; }
+    public int getURLId() { return mURLId; }
 
-    // This method is only called when landscape layout config. is used
-    public int getImage2AssetId() { return mImage2AssetId; }
-
-    /* 'setter' methods for member variables */
-    public void setName(String name) {this.mName = mName; }
-    public void setImageAssetId(int imageAssetId) { this.mImageAssetId = imageAssetId; }
-    public void setAddress(String address) {this.mAddress = address; }
-    public void setURL(String url) { this.mURL = url; };
+//    // This method is only called when landscape layout config. is used
+//    public int getImage2AssetId() { return mImage2AssetId; }
 
     @Override
     public String toString() {
         return "Location{" +
-                "mName='" + mName + '\'' +
-                ", mAddress='" + mAddress + '\'' +
-                ", mImageAssetId=" + mImageAssetId + "mURL= " + mURL +
+                "mNameId='" + mNameId + '\'' +
+                ", mAddressId='" + mAddressId + '\'' +
+                ", mImageAssetId=" + mImageAssetId + "mURLId= " + mURLId +
                 '}';
     }
 }

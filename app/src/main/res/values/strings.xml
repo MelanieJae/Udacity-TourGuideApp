@@ -13,7 +13,7 @@
     <string name="appbar_outdoor">Outdoor Activities</string>
     <string name="appbar_shops">Explore Shops</string>
     <string name="appbar_wine">Local Winery and Farm Tours</string>
-    <string name="appbar_cafes">Restaurants and Nightlife</string>
+    <string name="appbar_cafes">Cafes</string>
 
     <!-- weather fragment temps -->
     <string name="forecast_heading">"5-day Weather Forecast"</string>
@@ -41,4 +41,75 @@
     <string name="main_page_image">
         Lake Wakatipu at sunset with Remarkables Mountain Range in the background
     </string>
+
+    <!-- cafe activity strings -->
+    <string name="cafe_1_name">Halo Forbidden Bite</string>
+    <string name="cafe_1_address">1 Earl. St., Queenstown, 9300</string>
+    <string name="cafe_1_url">http://www.haloforbiddenbite.co.nz</string>
+    <string name="cafe_2_name">Vudu Cafe &amp; Larder</string>
+    <string name="cafe_2_address">23 Beach St., Queenstown, 9300</string>
+    <string name="cafe_2_url">http://vudu.co.nz</string>
+    <string name="cafe_3_name">Lone Star Cafe &amp; Bar</string>
+    <string name="cafe_3_address">14 Brecon St., Queenstown, 9300</string>
+    <string name="cafe_3_url">https://www.lonestar.co.nz</string>
+
+    <!-- education activity strings -->
+    <string name="edu_1_name">Wanaka River Jet Boat Tour</string>
+    <string name="edu_1_address">99 Ardmore St, Wanaka 9305</string>
+    <string name="edu_1_url">https://www.wanakariverjourneys.co.nz</string>
+    <string name="edu_2_name">Glenorchy Lord of the Rings Tour</string>
+    <string name="edu_2_address">Queenstown, 9300</string>
+    <string name="edu_2_url">https://www.pureglenorchy.com</string>
+    <string name="edu_3_name">Arrowtown Time Walks</string>
+    <string name="edu_3_address">24 Centennial Ave, Arrowtown, 9302</string>
+    <string name="edu_3_url">https://www.arrowtowntimewalks.com</string>
+    <string name="edu_4_name">Maori Haka Cultural Show</string>
+    <string name="edu_4_address">Skyline Gondola, Brecon St., Queenstown 9300</string>
+    <string name="edu_4_url">https://skyline.co.nz</string>
+
+    <!-- outdoor activity strings -->
+    <string name="od_1_name">Kawarau River Bridge Bungy Jump</string>
+    <string name="od_1_address">State Highway 6, Gibbston Valley, Queenstown 9384</string>
+    <string name="od_1_url">https://www.ajhackett.com</string>
+    <string name="od_2_name">Ben Lomond Track</string>
+    <string name="od_2_address">Brecon St., Queenstown, 9371</string>
+    <string name="od_2_url">
+        http://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/queenstown-area/things-to-do/ben-lomond-track</string>
+    <string name="od_3_name">Otago Rail Trail Cycling</string>
+    <string name="od_3_address">Lauder 9377</string>
+    <string name="od_3_url">https://www.otagocentralrailtrail.co.nz</string>
+
+    <!-- rests activity strings -->
+    <string name="rest_1_name">Fergburger</string>
+    <string name="rest_1_address">42 Shotover St., Queenstown, 9300</string>
+    <string name="rest_1_url">http://www.fergburger.com</string>
+    <string name="rest_2_name">Botswana Butchery</string>
+    <string name="rest_2_address">17 Marine Parade, Queenstown East, 9300</string>
+    <string name="rest_2_url">https://www.botswanabutchery.co.nz</string>
+    <string name="rest_3_name">Rata</string>
+    <string name="rest_3_address">43 Ballarat Street, Queenstown 9348</string>
+    <string name="rest_3_url">http://www.ratadining.co.nz</string>
+
+    <!-- shops activity strings -->
+    <string name="shop_1_name">OConnells Shopping Centre</string>
+    <string name="shop_1_address">Corner of Camp and Beach Sts., Queenstown, 9348</string>
+    <string name="shop_1_url">http://www.oconnells.net.nz</string>
+    <string name="shop_2_name">Remarkables Park Town Centre</string>
+    <string name="shop_2_address">Hawthorne Dr., Frankton, 9300</string>
+    <string name="shop_2_url">http://www.remarkablesparktowncentre.co.nz</string>
+    <string name="shop_3_name">FreshChoice Queenstown</string>
+    <string name="shop_3_address">64 Gorge Rd, Queenstown 9348</string>
+    <string name="shop_3_url">http://freshchoice.co.nz</string>
+
+    <!-- wine activity strings -->
+    <string name="wine_1_name">Carrick</string>
+    <string name="wine_1_address">247 Cairnmuir Rd, Nevis 9384</string>
+    <string name="wine_1_url">https://www.carrick.co.nz</string>
+    <string name="wine_2_name">Doctors Flat Vineyard</string>
+    <string name="wine_2_address">Otago, 9384</string>
+    <string name="wine_2_url">https://doctorsflat.co.nz</string>
+    <string name="wine_3_name">Gibbston Valley</string>
+    <string name="wine_3_address">1820 State Highway 6, Gibbston 9371</string>
+    <string name="wine_3_url">https://gibbstonvalley.co.nz</string>
+
 </resources>

@@ -1,7 +1,6 @@
 package com.example.melanieh.tourguideapp;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,31 +26,18 @@ public class CafesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.card_category);
 
-        //array list
+        //ArrayList and adapter
         ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Halo Forbidden Bite", R.drawable.cafe_cafe_halo,
-                R.drawable.cafe_halo_2, "1 Earl. St., " + "Queenstown, 9300",
-                "http://www.haloforbiddenbite.co.nz"));
-        locations.add(new Location("Vudu Cafe & Larder", R.drawable.cafe_vudu_larder,
-                R.drawable.cafe_vudu_2, "23 Beach St.," +
-                "Queenstown, 9300", "http://vudu.co.nz"));
-        locations.add(new Location("Lone Star Cafe & Bar", R.drawable.cafe_lone_star,
-                R.drawable.cafe_lone_star_2, "14 Brecon St., Queenstown, 9300", "https://www.lonestar.co.nz"));
-        locations.add(new Location("The Exchange", R.drawable.cafe_exchange_1, R.drawable.cafe_exchange_2,
-                "19 Ballarat St., " +  "Queenstown 9348", "http://theexchangecafe.kiwi"));
+        locations.add(new Location(R.string.cafe_1_name, R.drawable.cafe_cafe_halo,
+                R.string.cafe_1_address, R.string.cafe_1_url));
+        locations.add(new Location(R.string.cafe_2_name, R.drawable.cafe_vudu_larder,
+                 R.string.cafe_2_address, R.string.cafe_2_url));
+        locations.add(new Location(R.string.cafe_3_name, R.drawable.cafe_lone_star,
+                R.string.cafe_3_address, R.string.cafe_3_url));;
 
         LocationAdapter adapter =
                 new LocationAdapter(this, locations);
-
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml file.
         final ListView listView = (ListView) findViewById(R.id.list);
-
-        // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
-        // {@link ListView} will display list items for each word in the list of words.
-        // Do this by calling the setAdapter method on the {@link ListView} object and pass in
-        // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
 
         //clickListener
@@ -72,18 +58,4 @@ public class CafesActivity extends AppCompatActivity {
         });
     }
 
-
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            setContentView(R.layout.card_category);
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            setContentView(R.layout.card_category);
-        }
-
-
-    }
 }

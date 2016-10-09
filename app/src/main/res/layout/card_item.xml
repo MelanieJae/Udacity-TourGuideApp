@@ -11,7 +11,7 @@
         android:id="@+id/card_view"
         style="@style/LocationCard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="300dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,26 +20,22 @@
 
             <TextView
                 android:id="@+id/location_name"
-                style="@style/LocationCardText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:id="@+id/location_img"
-                style="@style/LocationCardImage" />
+                android:layout_alignParentTop="true"
+                style="@style/LocationCardText" />
 
             <TextView
                 android:id="@+id/location_address"
                 style="@style/LocationCardText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true" />
+                android:layout_below="@id/location_name" />
 
             <TextView
                 android:id="@+id/location_url"
                 style="@style/LocationCardText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_below="@id/location_address"/>
+
+            <ImageView
+                android:id="@+id/location_img"
+                style="@style/LocationCardImagePortrait" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
